@@ -22,7 +22,7 @@ public interface CodeHistoryProvider {
    *
    * @param key key
    * @param history 历史
-   * @param expireMillis 缓存有效期，任何<code><0</code>的数字都认为永久有效
+   * @param expireMillis 缓存有效期，任何<code><=0</code>的数字都认为永久有效
    */
   void save(String key, CodeHistory history, long expireMillis);
 

@@ -16,7 +16,7 @@ public interface CodeConfiguration {
   long postIntervalMillis();
 
   /**
-   * 验证码过期市场，任何<code><0</code>的数字都认为永久有效
+   * 验证码过期市场，任何<code><=0</code>的数字都认为永久有效
    */
   long codeExpiredMillis();
 
